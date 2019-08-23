@@ -97,15 +97,8 @@ bot.on(/^\/bp (.+)$/, (msg, props) => {
 // General Commands
 
 bot.on('/start', (msg) => {
-    let replyMarkup = bot.inlineKeyboard([
-        [
-            bot.inlineButton("Source Code", {url:"https://github.com/icodelifee/tg-UrlShortnerBot" })
-        ],
-        [
-            bot.inlineButton("Support Chat",{ url: "https://t.me/itorrentsupport" })
-        ]
-    ])
-    msg.reply.text(`<b>Hi ${msg.chat.first_name}, I Can Short And Bypass Yout Links.</b>\n-/help For More Info\n<code>Bot Developer : </code>@iCodeLife`, {
+    
+    msg.reply.text(`<b>Hi ${msg.chat.first_name}, I Can Short And Bypass Your some shitty Links.</b>\n-/help For More Info\n<code>Bot Developed by a shit guy known has : </code>Short`, {
         asReply: true,
         parseMode: "html",
         replyMarkup
@@ -114,14 +107,7 @@ bot.on('/start', (msg) => {
 );
 
 bot.on('/help', (msg) => {
-    let replyMarkup = bot.inlineKeyboard([
-        [
-            bot.inlineButton("Source Code", {url:"https://github.com/icodelifee/tg-UrlShortnerBot" })
-        ],
-        [
-            bot.inlineButton("Support Chat",{ url: "https://t.me/itorrentbotsupport" })
-        ]
-    ])
+   
     msg.reply.text(`<b>Hi ${msg.chat.first_name}, You Have Requested For Help!</b>\n`+
                     `\nHow To Use Bot 101:\n`+
                     `<b>To Short Url</b> - Copy Paste The Link And Send \n`+
@@ -138,7 +124,7 @@ bot.on('/help', (msg) => {
                      `Bc.vc\n`+
                      `NowVideo and AuroraVid (MP4/FLV video direct link will be extracted)\n`+
                      `All generic services that use simple 301/302 redirect (goo.gl, bit.ly, t.co,...)</code>\n`+
-                     `\n<code>Bot Developer : </code>@iCodeLife`, {
+                     `\n<code>Bot Developer : </code>Short`, {
         asReply: true,
         parseMode: "html",
         replyMarkup
