@@ -96,8 +96,7 @@ bot.on(/^\/bp (.+)$/, (msg, props) => {
 
 // General Commands
 
-bot.on('/start', (msg) => {
-    
+bot.on('/start', (msg) => { 
     msg.reply.text(`<b>Hi ${msg.chat.first_name}, I Can Short And Bypass Your some shitty Links.</b>\n-/help For More Info\n<code>Bot Developed by a shit guy known has : </code>Short`, {
         asReply: true,
         parseMode: "html",
@@ -107,7 +106,6 @@ bot.on('/start', (msg) => {
 );
 
 bot.on('/help', (msg) => {
-   
     msg.reply.text(`<b>Hi ${msg.chat.first_name}, You Have Requested For Help!</b>\n`+
                     `\nHow To Use Bot 101:\n`+
                     `<b>To Short Url</b> - Copy Paste The Link And Send \n`+
